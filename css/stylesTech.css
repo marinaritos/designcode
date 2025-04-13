@@ -1,0 +1,1354 @@
+body { 
+    background-color: #E6E8E8; 
+    margin: 0; 
+    font-family: 'Lato', sans-serif; 
+    padding-top: 80px; 
+ 
+    width: 100%; 
+} 
+ 
+header {
+    background-color: #e6e8e8;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aliniază vertical */
+    padding: 0px 156px; 
+    box-sizing: border-box;
+
+        /* border: 4px solid rgb(146, 221, 231);  */
+
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between; /* Spațiu egal între elemente */
+    align-items: center;
+    /* align-content: center;  */
+
+    width: 100%;
+    max-width: 1128px;
+    min-width: 360px; 
+    /* padding: 0px 156px;  */
+    /* overflow: hidden;  */
+
+    /* max-width: 976px; Limitează lățimea */
+   /* padding: 0 20px;  Spațiu pe margini */
+    box-sizing: border-box;
+    position: relative; 
+    gap: 16px; /* Control asupra spațiilor între elemente */
+    
+    /* border: 4px solid rgb(226, 49, 108);  */
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.justLogo {
+    display: none; /* Ascuns implicit, poate fi activat la nevoie */
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* Elimină bulinele implicite */
+    padding: 0;
+    margin: 0 auto; /* Asigură poziționarea în centru */
+    gap: 24px;  
+    /* Ajustează spațierea */ 
+
+}
+
+nav ul li {
+    margin-right: 24px; /* Distanță între link-uri */
+    
+}
+
+nav ul li:last-of-type {
+    margin-right: 0; /* Elimină margin pentru ultimul element */
+}
+
+nav ul li a {
+    color: #464F53;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* gap: 24px; */
+}
+
+nav ul li a:hover {
+    color: #282D2F; /* Schimbă culoarea pe hover */
+}
+
+.language-en-orizontal-de ul {
+    display: flex;
+    gap: 0px;
+
+    /* font-size: 14px;  */
+    /*gap: -91px;  Spațiu între elementele de limbă */
+}
+
+.language-en-orizontal-de #roText{ 
+    margin-right: -16px; 
+    font-size: 14px;
+} 
+
+.language-en-orizontal-de #enText {
+    font-weight: bold;
+    cursor: default;
+    margin-left: -16px; 
+    font-size: 14px; 
+}
+
+ 
+ 
+/* --hero section start> --------------------------- */ 
+ 
+ 
+/* Containerul principal al secțiunii Hero - Secțiunea generală Hero*/ 
+.hero-section { 
+    position: relative; /* Permite poziționarea absolută a elementelor copil (parintele il punem relativ, ca apoi copii sa-i punem absolut)*/ 
+    /* height: 724px;  */
+    height: auto; /* Permite secțiunii să crească automat */
+    /* padding: 20px;  Reducem padding pentru ecrane mici */ 
+    /* gap: 202px; */
+    justify-content: center;
+
+    
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    /* justify-content: flex-start;  */
+       
+    /* border: 4px solid rgb(190, 237, 132);  */
+
+} 
+ 
+/* Conținutul secțiunii Hero */ 
+.hero-content { 
+    /* width: 1440px; */ 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+ 
+    width: 100%; /* Responsiv */
+    max-width: 1440px; /* Limitează lățimea */ 
+    padding: 154px 156px; 
+    margin: 0 auto; /* Centrează conținutul */
+
+    background-color: #e6e8e8; 
+    /* background-color: #8485a2;  */
+
+    gap: 10px; 
+    box-sizing: border-box; /* Include padding și border */
+    overflow: hidden; 
+    /*text-align: center;  Aliniere centrală pe ecrane înguste */
+ 
+    /* border: 4px solid rgb(102, 182, 4);  */
+} 
+ 
+/* .hero-content - Grupare imagine și text */
+.heroPicTextAll{     
+    position: relative;   
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly; /* de ce nu apare spatiu intre? */ 
+    flex-wrap: wrap; 
+ 
+    width: 100%; 
+    gap: 64px; 
+    text-align: center; 
+    color: #424a4e; 
+    box-sizing: border-box; /* Include border și padding în calculul lățimii, no ctoto nu vre */ 
+ 
+    /* border: 4px solid rgb(116, 234, 165);  */
+} 
+ 
+/* Imagine și text pe stânga */
+/* .hero-content  */
+.heroPicTextLeft{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 18px; 
+    align-self: stretch; 
+ 
+    /* border: 4px solid rgb(39, 74, 231); */ 
+} 
+ 
+/* Stil pentru imagine rotundă */
+/* .hero-content  */
+.photovm-circle{ 
+    /* width: 274px; 
+    height: 274px;  */
+    width: 100%;
+    height: auto;
+
+    border-radius: 50%; /* Creează efectul rotund */ 
+
+    /* border: 4px solid rgb(39, 74, 231);  */
+} 
+ 
+/* Cadru pentru nume și rol */
+/* .hero-content  */
+.vm-designcoderframe{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 4px; 
+    
+    /* border: 4px solid rgb(252, 255, 158); */ 
+} 
+
+/* Nume */
+/* .hero-content  */
+.vlad-marin{ 
+    font-size: 54px; 
+    line-height: 68px; 
+    color: #424a4e; 
+    text-align: center; 
+    
+    /* border: 3px solid rgb(131, 82, 223);  */
+} 
+
+/* Descriere rol */
+/* .hero-content  */
+.designer-coder{ 
+    font-size: 32px; 
+    line-height: 38px; 
+    color: #9191a1; 
+    text-align: center;  
+
+    /* border: 3px solid rgb(179, 141, 250); */ 
+} 
+ 
+/* Text + buton */
+/* .hero-content  */
+.TextButtonFrame{ 
+   /* max-width: 800px;  Limitează lățimea containerului 
+    margin: 0 auto; /* Centrează containerul pe ecran 
+    min-width: 600px; /* Lățime minimă */
+
+    position: relative; 
+    flex: 1; 
+    width: 100%; 
+    /*max-width: 100%;  Oferă-i un container clar */
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 24px; 
+    text-align: left;
+    width: 100%; 
+    /* color: #353b3e;  */
+    /* height: 100%;  */
+
+    /*!!!!!!!!! border: 4px solid rgb(144, 104, 218);  */
+} 
+
+/* Titlu principal */
+/* .hero-content  */
+.crafting-digital-experiences h1{ 
+    font-size: 56px; 
+    line-height: 68px; 
+    color: #353b3e;
+    margin: 0; /*adaugat la cplt*/
+    text-align: left; 
+} 
+
+
+/* Subtitlu */
+/* .hero-content */
+.lets-kickstart-your{ 
+    /* width: 671px;  */
+    width: 80%;
+    position: relative; 
+    font-size: 40px; 
+    line-height: 50px; 
+    color: #586368; 
+    text-align: left; 
+    /* display: inline-block;  */
+        /* border: 4px solid rgb(144, 104, 218);  */
+
+} 
+
+/* Stiluri pentru buton */
+.button { 
+    margin-top: 20px;   /*scoase de cplt */
+    box-sizing: border-box; /*scoase de cplt */
+    height: 66px;
+    border-radius: 6px; 
+    background-color: #0073A2; 
+    color: #EEEFF0; 
+    font-size: 32px; 
+    font-weight: bold; 
+    line-height: 38px; 
+    text-align: center;   
+    cursor: pointer; 
+    padding: 10px 57px;  
+    transition: filter 0.3s ease;/* Smooth transition */ 
+} 
+
+.button:hover { 
+    /* color: #EEEFF0;  */
+    /* background-color: #006C98;  */
+    filter: drop-shadow(0 0 2px #4F595E); 
+} 
+
+
+
+
+/* ---Contact Social - contact section icons on the right side of the hero section ---------- */ 
+.contactSocialLineFrame { 
+    position: absolute; /* Poziționează față de .TextButtonFrame */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 12px; 
+    right: 0; /* Aliniere la marginea dreaptă */
+    top: 51%; 
+    transform: translateX(-522%); 
+    opacity: 0.6;
+
+
+    /* right: 162px;  */
+    /* bottom: 100px;  */
+    /*bottom: 0;  Aliniere la marginea de jos */
+    /* border: 4px solid rgb(81, 226, 49); */ 
+
+} 
+.social { 
+
+    display: flex; 
+    flex-direction: column; 
+    gap: 22px; 
+    /* z-index: 0;  */
+
+    /* align-items: flex-start; 
+    justify-content: flex-start;  */
+
+    /* border: 4px solid rgb(226, 49, 108); */ 
+
+} 
+.iconoirtelegram { 
+    cursor: pointer; 
+    width: 32px; 
+    height: 32px;  
+    transition: transform 0.001s ease; 
+    /*transition: filter 0.3s ease; Smooth transition */ 
+    /* overflow: hidden;  */
+    /* flex-shrink: 0;  */
+    /* position: relative;  */
+
+} 
+.iconoirtelegram:hover {  
+    /* transform: scale(1.04);  */
+    /* filter: drop-shadow(0 0 15px #0090CA); */ 
+    /* box-shadow: 0 0 10px rgba(0, 115, 162, 1); Adjust color and spread  */ 
+    transform: scale(1.1); /*Slightly enlarge the icon */ 
+} 
+        
+.blueline-child { 
+    width: 2px; 
+    height: 110px; 
+    background: linear-gradient(360deg, #586368 0%, rgba(0, 73, 103, 0.00) 100%); 
+    /* background: linear-gradient(360deg, #28d3d3 0%, rgba(0, 73, 103, 0.00) 100%); */ 
+
+
+} 
+.blueline { 
+    display: flex; 
+    padding: 10px; 
+    align-items: flex-start; 
+    gap: 10px; 
+
+    position: absolute; 
+    right: 5px; 
+    bottom: -130px; 
+} 
+     
+
+ 
+/* --- < HERO section END < ------------------------ */ 
+ 
+
+
+
+
+
+
+
+/* --- > Skills section Start > -------------------- */ 
+ 
+/* Container principal pentru secțiunea skills */ 
+.skills-section{ 
+    background: var(--Foundation-PrimaryAlbastruSuriu-Normal, #586368); 
+    width: 100%; /* Responsiv */ 
+    position: relative;
+    /* border: 4px solid rgb(226, 49, 108);  */
+} 
+ 
+/* Conținutul secțiunii skills */ 
+.skills-content { 
+    /* 1. Resetările și modelul de box - Proprietăți care definesc cum elementul și conținutul său se comportă: */ 
+    box-sizing: border-box; 
+ 
+    /* 2. Așezarea pe pagină - Proprietăți care stabilesc poziționarea și dimensionarea elementului: */ 
+    position: relative; 
+    margin-top: -48px; 
+    width: 100%; /* Folosește unități relative - Responsiv*/ 
+    min-width: 360px; 
+    /* width: 1440px; */ 
+ 
+    /* 3. Flexbox/Grid (dacă există) - Proprietăți legate de layout (folosite pentru Flexbox sau Grid): */ 
+    display: flex; 
+    flex-direction: column; 
+    /* flex-direction: row; */ 
+    flex-wrap: wrap; 
+    align-items: flex-start; /* Schimbă align-items pentru a alinia la stânga - Aliniază pe verticală */ 
+    align-content: center; 
+    /* justify-content: center;  Aliniază pe orizontală */ 
+    flex-grow: 1; 
+     
+    /* 4. Spațiere (Padding și Margin) - Proprietăți care controlează spațiul interior și exterior: */ 
+    padding: 48px 156px 148px; /* padding: top right bottom left */ 
+ 
+    /* 5. Overflow și Scrolling - Proprietăți care gestionează conținutul ce depășește containerul: */ 
+    /*overflow: auto;  Permite scroll pentru conținutul care depășește containerul */ 
+    /*overflow-x: scroll;  Scroll pe orizontală, dacă este necesar */ 
+ 
+    /* 6. Stiluri de text - Tot ce ține de stilizarea textului (fonturi, culori, aliniere): */ 
+    font-size: 48px; 
+    text-align: left; 
+    color: #E6E8E8; 
+ 
+     
+    /* overflow: hidden; */ 
+    /* padding: 0px; */ 
+    /* overflow: hidden; */ 
+    /* border: 4px solid rgb(226, 214, 49);  */
+
+ 
+} 
+ 
+.skillcardsframe { 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    align-content: center; 
+    gap: 20px; 
+ 
+    width: 100%; /* Responsiv */ 
+    max-width: 1128px; /* Lățime maximă ??? */ 
+    min-width: 158px; 
+
+    border-radius: 6px; 
+ 
+    font-size: 26px; 
+    color: #E6E8E8; 
+    letter-spacing: 0.01em; 
+    line-height: 58px; 
+ 
+    /* border: 4px solid rgb(197, 255, 37);  */
+
+    /* -- */ 
+} 
+
+ 
+h2{ 
+    text-align: left;       
+    font-size: 36px; 
+    /* font-style: normal; */ 
+    font-weight: 700; 
+    line-height: 58px; /* 120.833% */ 
+    letter-spacing: 0.36px; /* 1% din 16px = 0.01 * 16px = 0.16px */ 
+} 
+ 
+.figma { 
+    position: relative; 
+    letter-spacing: 0.01em; 
+    line-height: 38px; 
+} 
+ 
+.logo-tool{
+    width: auto;
+    height: auto;
+}
+
+.figma-tool{
+    width: auto;
+    height: auto;
+}
+    .figma-wrapper { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    } 
+ 
+    .figmacardframe { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    width: 158px; 
+    height: 142px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    } 
+ 
+    .figmagroup { 
+    width: 158px; 
+    position: relative; 
+    height: 142px; 
+    } 
+ 
+    .figmacard { 
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */ 
+ 
+    width: 264px; 
+    height: 260px; 
+    padding: 40px; 
+    gap: 10px; 
+ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    border: 0.5px solid #444d50; 
+    border-radius: 6px; 
+    background-color: #4f595e; 
+ 
+    box-shadow:  
+        0px 14px 4px rgba(31, 35, 36, 0), 
+        0px 9px 4px rgba(31, 35, 36, 0.01), 
+        0px 5px 3px rgba(31, 35, 36, 0.05), 
+        0px 2px 2px rgba(31, 35, 36, 0.09), 
+        0px 1px 1px rgba(31, 35, 36, 0.1); 
+ 
+    overflow: hidden; 
+    box-sizing: border-box; 
+    flex-shrink: 0; 
+    } 
+ 
+
+/* --- < Skills section END < --------------------- */ 
+
+
+
+
+
+
+
+ 
+/* --- > Portfolio section start > ---------------> */ 
+ 
+/*  
+.portfolioSection{ 
+} */ 
+ 
+/* Container principal pentru secțiunea portfolio */ 
+.portfolio-content {  
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;/* Schimbă align-items pentru a alinia la stânga */ 
+    flex-wrap: wrap; 
+    align-content: center; 
+ 
+    width: 100%; /* Responsiv - Folosește unități relative */ 
+    /* min-width: 360px;  */
+    padding: 48px 156px 96px; /* Spațiere interioară padding: top right bottom left */ 
+    margin-top: -48px; /* Poziționare */ 
+    gap: 4px; 
+ 
+    background: var(--foundation-primary-albastru-suriu-normal-hover, #4F595E); /* Fundal flexibil */ 
+    color: var(--text-color, #c8c8d0); /* Utilizare variabilă CSS pentru culoare */ 
+    font-size: 48px; 
+    
+    position: relative; /* Necesită pentru elementele poziționate */ 
+    /*overflow-x: auto;  Permite scroll orizontal */ 
+    box-sizing: border-box; 
+     
+    /* border: 4px solid rgb(198, 255, 128);    */
+ 
+} 
+ 
+/* Titlul secțiunii */ 
+/* section */
+.portfolio-content h2{ 
+    text-align: left; 
+    /* border: 4px solid rgb(255, 238, 0);  */
+
+} 
+/* .portfolioframe { 
+     
+    }    */ 
+ 
+.portfoliocardsframe { 
+
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    width: 100%; /* Responsiv */ 
+    max-width: 1128px; /* Lățime maximă */ 
+    min-width: 360px; 
+    gap: 18px; /* de schimbat la 24px dupa ce scot border de test */ 
+ 
+    background-color: #4f595e; 
+    border-radius: 6px; 
+ 
+    font-size: 26px; 
+    color: #e6e8e8; 
+    letter-spacing: 0.01em; 
+    line-height: 58px; 
+    /* border: 4px solid rgb(145, 136, 13);  */
+
+    } 
+ 
+/* .portfolio { 
+    } */ 
+    
+/* Stilurile pentru imagini din carduri */ 
+    .image {     
+    width: 100%; /* Ocupă întregul spațiu */ 
+    max-width: 360px; /* Dimensiunea maximă - Setează o latime maximă pentru imagini*/ 
+     
+    min-width: 360px; 
+ 
+    height: 259px; /* Înălțime fixă */ 
+    padding: 40px; /* Spațiere interioară */
+    border-radius: 6px; 
+ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    position: relative; /* Poziționare */ 
+    overflow: hidden; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top; 
+    cursor: pointer; 
+    transition: box-shadow 0.3s ease; /* Animație pentru hover */ 
+    z-index: 0; /*elementele sa ramina in spate la clic pu zoom imagine*/ 
+    box-sizing: border-box; 
+    } 
+ 
+    /* .image:hover { 
+    } */ 
+ 
+ 
+    /* Adăugat pseudo-elementul ::before */ 
+    .image::before { 
+        content: ""; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        border-radius: 6px; 
+        transition: all 0.3s ease; 
+        box-shadow: none;   
+    } 
+     
+    /* Adăugat stilurile pentru hover */ 
+    /* .image:hover::before { 
+        box-shadow: 0 0 20px #ff6f00; 
+    } */ 
+     
+    .image:hover {  
+        box-shadow: 0 0 5px #0073A2; /* Umbra la hover în jurul imaginii */  
+        z-index: 1; /* Asigură-te că umbra nu este acoperită - Ridică imaginea deasupra altor elemente */  
+    } 
+     
+    /* Fundalurile specifice imaginilor */ 
+    #i1 { background-image: url('../images/portfolio/VaneaOil_HW1.png'); } 
+    #i2 { background-image: url('../images/portfolio/Store.png'); } 
+    #i3 { background-image: url('../images/portfolio/NFT_mrkt_HW2.png'); } 
+    #i4 { background-image: url('../images/portfolio/Mobile.png'); } 
+    #i5 { background-image: url('../images/portfolio/policeSimulatorMenu.png'); } 
+    #i6 { background-image: url('../images/portfolio/hero_iepurasi.png'); } 
+     
+ 
+ 
+/* Text din carduri */ 
+    .cardTextLarge { 
+        position: relative; 
+        letter-spacing: 0.01em; 
+        line-height: 38px; 
+    } 
+     
+    .cardTextSmall { 
+        position: relative; 
+        font-size: 16px; 
+        letter-spacing: 0.01em; 
+        line-height: 28px; 
+        color: #cbcfd0; 
+    } 
+     
+/* Carduri - text suprapus */ 
+    .motor-oils-parent {
+        display: flex; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: center; 
+ 
+        width: 360px; 
+        position: absolute; 
+        top: 175px; 
+        left: 0; 
+        padding: 8px 24px; 
+        gap: 2px; 
+ 
+        background-color: rgba(70, 79, 83, 0.74); /* Fundal semi-transparent */ 
+        backdrop-filter: blur(33.9px); /* Efect de blur */ 
+        overflow: hidden; 
+ 
+        z-index: 1; 
+    } 
+ 
+/* ------- > portfolio card zoom start > ------------ */ 
+ 
+.modal { 
+    display: none; 
+    position: fixed; 
+    margin-top: 40px; /* Ajustează spațiul pentru ecrane mici */
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); 
+} 
+ 
+.modal-content-long { 
+    margin: 5% auto; 
+    display: block; 
+    width: auto; 
+    width: 70%; 
+    /* max-width: 700px;  */
+} 
+ 
+.modal-content-wide { 
+    margin: 5% auto; 
+    display: block; 
+    width: auto; 
+    max-width: 90%; 
+    height: auto; 
+    max-height: 80%; 
+} 
+ 
+.close { 
+    position: absolute; 
+    top: 15px; 
+    right: 35px; 
+    color: #fff; 
+    font-size: 40px; 
+    font-weight: bold; 
+    transition: 0.3s; 
+    cursor: pointer; 
+} 
+ 
+.close:hover, .close:focus { 
+    color: #bbb; 
+    text-decoration: none; 
+    cursor: pointer; 
+} 
+ 
+/* ------- < Portfolio section END < ---------- */ 
+
+
+
+
+
+
+
+
+
+
+ 
+/* ------- > About section start > ------------ */ 
+ 
+.aboutContent{ 
+    box-sizing: border-box; /* e nevoie? */ 
+ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; /* Aliniere la stânga - Schimbă align-items pentru a alinia la stânga */
+
+    flex-wrap: wrap; 
+    align-content: center; 
+ 
+    width: 100%; /* Asigură adaptabilitatea */ 
+
+    position: relative; 
+    background-color: #464f53; /* Fundal specific secțiunii */ 
+    padding: 48px 156px 96px; /* padding: top right bottom left */ 
+    gap: 4px; 
+    /* margin-top: -48px; */ 
+ 
+    font-size: 48px; 
+    color: var(--text-color-primary, #c8c8d0); /* Se poate lega de o variabilă globală */ 
+    text-align: left; 
+
+    /* border: 4px solid rgb(37, 59, 255);   */
+} 
+.aboutContent h2{ 
+    text-align: left; 
+    /* border: 4px solid rgb(107, 122, 255);  */
+
+} 
+ 
+/* Container pentru carduri */ 
+.aboutcardframe { 
+    /* width: 1128px; */ 
+    display: flex; 
+    flex-wrap: wrap; /* Permite împachetarea cardurilor */ 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    align-content: center; 
+ 
+    width: 100%; /* Responsiv */ 
+    max-width: 1128px; /* Asigură o lățime maximă */ 
+    min-width: 360px; 
+
+    gap: 18px; /* de schimbat la 24px dupa ce scot border de test */ 
+ 
+    font-size: 26px; 
+    color: var(--text-color-secondary, #cbcfd0); 
+    text-align: center;
+    
+    /* border: 2px solid rgb(37, 157, 255);  */
+} 
+ 
+.learnervalueproposalcard { 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    width: 360px; /* Dimensiune fixă pentru card */ 
+    padding: 32px 24px; 
+    gap: 18px; 
+ 
+    border: 0.5px solid var(--border-color, #353b3e); 
+    border-radius: 6px; 
+    background-color: #424a4e; /* Fundal specific */ 
+    box-shadow:  
+        0px 14px 4px rgba(31, 35, 36, 0),  
+        0px 9px 4px rgba(31, 35, 36, 0.01),  
+        0px 5px 3px rgba(31, 35, 36, 0.05),  
+        0px 2px 2px rgba(31, 35, 36, 0.09),  
+        0px 1px 1px rgba(31, 35, 36, 0.1); 
+} 
+ 
+/* Text - pentru titluri sau descrieri */ 
+.text-block { 
+    align-self: stretch; 
+    position: relative; 
+    letter-spacing: 0.01em; 
+} 
+ 
+.dedicated-learner { 
+    composes: text-block; /* Stiluri comune */ 
+    line-height: 38px; 
+} 
+ 
+.always-seeking-new {
+    composes: text-block; /* Stiluri comune */ 
+    font-size: 16px; 
+    line-height: 28px; 
+    color: var(--text-color-tertiary, #babac4); 
+} 
+ 
+/* Container pentru text */ 
+.dedicated-learner-parent { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    align-self: stretch; 
+} 
+ 
+/* Iconuri */ 
+.icon-skill-lightbulb { 
+    width: 44px; 
+    height: 44px; 
+    position: relative; 
+    overflow: hidden; 
+    flex-shrink: 0; 
+} 
+ 
+ 
+/* ------- < About section END < ---------------- */ 
+ 
+
+
+/* -------- Footer section start > -------------- */ 
+
+.footer-section { 
+    width: 100%; 
+    position: relative; 
+    box-sizing: border-box; 
+    background-color: #282d2f; 
+    display: flex; 
+    /* padding: 54px 156px;  */
+    padding: 54px 20px 10px; /* Reduce padding pe lateral */
+    align-items: flex-start; /* Schimbă align-items pentru a alinia la stânga - Aliniază pe verticală */ 
+    align-content: center; 
+    
+    
+    /* border: 4px solid rgb(230, 153, 237); */
+} 
+
+.footer-content{
+    margin: 0 auto;
+    position: relative; 
+    box-sizing: border-box; 
+    width: 100%; 
+    min-width: 360px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 18px; /* Spațiere între elementele din footer */
+    color: #9191a1;
+    
+    /* border: 4px solid rgb(237, 37, 255); */
+}
+ 
+.logovm-img2only { 
+    width: 58.6px; 
+    height: 34px; 
+    cursor: pointer; 
+} 
+
+.socialrightsframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px; /* Adaugă spațiu între text, iconițe și copyright */
+    text-align: center; /* Asigură alinierea centrală a textului */
+}
+
+.textfooterframe{
+    letter-spacing: 0.01em; 
+    line-height: 28px;
+ 
+    
+}
+
+.icons-social-footer { 
+    /* align-self: stretch;  */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 24px; 
+} 
+
+.iconoirtelegram-footer { 
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; /* Animare mai ușoară */
+} 
+ 
+.iconoirtelegram-footer:hover {  
+    transform: scale(1.1); /* Ușor efect de mărire la hover */
+} 
+
+
+.copyrightframe { 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    margin-top: 10px; /* Crește spațiul între copyright și restul elementelor */
+} 
+
+.copyrightsymbol-icon { 
+    width: 16px;
+    height: 16px;
+    color: #5E5E6E; /* Asigură consistență cu restul textului */
+
+} 
+
+.copyright-all-rights { 
+    letter-spacing: 0.01em; 
+    line-height: 28px; 
+    font-weight: 300; 
+    color: #5E5E6E; /* Asigură consistență cu restul textului */
+
+} 
+
+
+
+
+
+ 
+
+
+
+ 
+a { color: inherit; /* Moștenește culoarea textului părinte */  
+    text-decoration: none; /* Elimină sublinierea */  
+} 
+ 
+ 
+/* --- < Footer section END < ------------------------ */ 
+ 
+ 
+ 
+
+
+
+/* --- experiment start>>> */ 
+ 
+/* --- <<< end experiment  */
+ 
+ 
+ 
+ 
+ 
+ 
+/* ****************************** 
+**  CSS MEDIA QUERIES *****  
+************************************/ 
+ 
+/* Large (laptopuri mici) 1400*/
+
+@media (max-width: 1430px) {
+
+    .heroPicTextAll{     
+        gap: 54px; 
+    } 
+
+    .heroPicTextLeft{  
+        gap: 14px; 
+        align-self: stretch; 
+     
+        /* border: 4px solid rgb(39, 74, 231); */ 
+    } 
+
+    .photovm-circle {
+        width: 95%;
+    }
+
+    .vlad-marin {
+        font-size: 48px; /* Dimensiuni mai mari pe tablete */
+        line-height: 62px; 
+    }
+
+    .designer-coder {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .crafting-digital-experiences h1{ 
+        font-size: 48px; 
+        line-height: 62px; 
+    } 
+
+    .lets-kickstart-your {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+}
+
+@media (max-width: 1360px) {
+    .heroPicTextAll{     
+        gap: 42px; 
+    } 
+
+    .crafting-digital-experiences h1{ 
+        font-size: 44px; 
+        line-height: 60px; 
+    } 
+
+    .lets-kickstart-your {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .photovm-circle {
+        gap: 4px;
+        width: 90%;
+    }
+
+    .vlad-marin {
+        font-size: 38px; /* Dimensiuni mai mari pe tablete */
+        line-height: 54px; 
+
+    }
+
+    .designer-coder {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+}
+
+
+@media (max-width: 1280px) {
+
+    .hero-content {    
+        padding: 154px 132px; 
+        gap: 10px; 
+    }
+
+    .button { 
+        background-color: #93d3ed; 
+
+    }
+
+}
+
+@media (max-width: 1210px) {
+
+    .hero-content {    
+        padding: 154px 112px; 
+        gap: 10px; 
+    }
+
+    .button { 
+        background-color: #b4dcec; 
+
+    }
+
+}
+
+@media (max-width: 1180px) {
+
+    header {
+        /* height: 60px; */
+        padding: 0px 130px; 
+    }
+
+    .hero-content {    
+        padding: 154px 68px; 
+        /* gap: 100px;  */
+    }
+
+    .heroPicTextAll{     
+        gap: 36px; 
+    } 
+     
+    /* .heroPicTextLeft{ 
+        gap: 18px; 
+    } */
+
+    .photovm-circle {
+        gap: 0px;
+        width: 85%;
+    }
+
+    .button { 
+        background-color: #c1e0ec; 
+    }
+
+    .contactSocialLineFrame { 
+        right: 0; /* Aliniere la marginea dreaptă */
+        top: 51%; 
+        transform: translateX(-442%); 
+        
+    }
+}
+
+@media (max-width: 1100px) {
+    header {
+        /* height: 60px; */
+        padding: 0px 40px; 
+    }
+
+    .hero-content {    
+        padding: 154px 40px; 
+        /* gap: 100px;  */
+    }
+
+    .heroPicTextAll{     
+        gap: 18px; 
+    } 
+
+    .button { 
+        background-color: #641960; 
+    }
+
+    .contactSocialLineFrame { 
+        right: 0; /* Aliniere la marginea dreaptă */
+        top: 51%; 
+        transform: translateX(-158%); 
+    }
+
+
+/* -- skills section start --> */
+    
+    .skills-content {
+         /* 4. Spațiere (Padding și Margin) - Proprietăți care controlează spațiul interior și exterior: */ 
+        padding: 48px 40px 126px;
+        font-size: 32px; 
+        line-height: 38px;
+    }
+
+    .logo-tool{
+        width: 100%;
+        height: 90%;
+    }
+
+    .figma-tool{
+        width: 35%;
+        height: 90%;
+    }
+
+    .figmacardframe { 
+        width: 158px; 
+        height: 142px; 
+        gap: 5px; 
+        } 
+
+    .figmacard { 
+        width: 214px; 
+        height: 210px; 
+        padding: 20px; 
+        gap: 0px; 
+        /* padding: 96px; */
+    }    
+
+ 
+
+    .portfolio-content {  
+        padding: 48px 40px 96px; 
+        font-size: 32px; 
+        line-height: 38px;
+    }
+    .aboutContent{ 
+        padding: 48px 40px 96px;
+        font-size: 32px; 
+        line-height: 38px;
+    }
+
+}
+
+/* @media (max-width: 1024px) {
+
+    .hero-content {    
+        padding: 154px 10%; 
+        gap: 10px; 
+    }
+
+    .button { 
+        background-color: #19b0eb; 
+
+    }
+
+} */
+
+
+/* @media (max-width: 1080px) {
+
+    .hero-content {    
+        padding: 154px 400px; 
+        gap: 10px; 
+    }
+
+    .heroPicTextAll{     
+        gap: 42px; 
+    } 
+
+    .button { 
+        background-color: #305564; 
+
+    }
+
+} */
+
+
+/* @media (max-width: 1360px) { */
+/* @media (max-width: 1024px) {
+
+
+    .hero-content {    
+        padding: 154px 40px; 
+        gap: 10px; 
+    }
+
+    .heroPicTextAll{     
+        gap: 14px; 
+    } 
+
+    .crafting-digital-experiences h1{ 
+        font-size: 38px; 
+        line-height: 56px; 
+    } 
+
+    .lets-kickstart-your {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .photovm-circle {
+        gap: 0px; 
+        width: 80%;
+    }
+
+    .vlad-marin {
+        font-size: 36px; 
+        line-height: 42px;
+    }
+
+    .designer-coder {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+} */
+
+/* Medium (tablete) */
+/* @media (max-width: 1024px) {
+    
+    
+
+} */
+
+
+/* Small (telefoane mai mari) */
+/* @media (max-width: 768px) {
+    .photovm-circle {
+        width: 80%;
+    }   
+    
+} */
+
+/* Extra small (telefoane) */
+/* @media (max-width: 480px) {
+   
+
+} */
+ 

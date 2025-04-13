@@ -1,402 +1,435 @@
 <!DOCTYPE html>
-<html>
-<head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	
-  	<link rel="stylesheet"  href="figma_style.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap" />
-  	
-  	
-  	
-</head>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Vlad's Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesTech.css">
+    </head>
+
+	
 <body>
-  	
-  	<div class="vmpageendesign-copywork">
-    		<div class="header-desktop-en">
-      			<img class="logovm-icon" alt="" src="img/Header_LogoVM.svg">
+
+	<header>
+		<div class="headerContent">
+			<li class="logo">
+				<a href="#hero" class="scroll-link">
+					<img alt="VM logo" title="Vlad Marin - designer & coder" src="images/header/LogoVM.svg"
+						style="width: 100%;"
+						onmouseover="this.src='images/header/LogoVM_design&coding_hover.svg';"
+						onmouseout="this.src='images/header/LogoVM.svg';">
+				</a>
+			</li>
+			<nav>
+				<ul>
+					<li><a href="#hero" class="scroll-link hover-underline-animation">Home</a></li>
+					<li><a href="#skills" class="hover-underline-animation">Skills</a></li>
+					<li><a href="#portfolio" class="hover-underline-animation">Portfolio</a></li>
+					<li><a href="#about" class="hover-underline-animation">About</a></li>
+				</ul>
+			</nav>
+			<nav class="language-en-orizontal-de">
+				<ul>
+					<li><a href="indexRo.html" class="hover-underline-animation" id="roText" title="Spre versiunea română a site-ului...">Ro</a></li>
+					<li>|</li>
+					<li><a href="index.html/" id="enText" title="Yay, we’re in English now!">En</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		
+
+  	<!-- 
+    		<div class="searchframe">
+      			<div class="search">Search</div>
+	<img class="fluentsearch-48-regular22-icon" alt="" src="fluent_search-48-regular22.png">
       			
-      			<div class="menu">
-        				<div class="homeframe">
-          					<b class="home">Home</b>
-        				</div>
-        				<div class="skillsframe" id="skillsFrameContainer">
-          					<div class="skills">Skills</div>
-        				</div>
-        				<div class="skillsframe" id="portfolioFrameContainer">
-          					<div class="skills">Portfolio</div>
-        				</div>
-        				<div class="skillsframe" id="aboutFrameContainer">
-          					<div class="skills">About</div>
-        				</div>
-      			</div>
-      			<div class="language-en-orizontal-de">
-        				<div class="ro" id="roText">Ro</div>
-        				<div class="en">En</div>
-        				<div class="languageverticalline">
-        				</div>
-      			</div>
-      			<div class="searchframe">
-        				<div class="search">Search</div>
-        				<img class="fluentsearch-48-regular22-icon" alt="" src="img/Header_fluent_search-48-regular22.svg">
+    		</div>
+  	</div> -->
+
+
+	<!-- hero section start-------------------------- -->
+	<section id="hero" class="hero-section">
+		<div class="hero-content">
+			 <div class="heroPicTextAll"> <!--poza cu text + text Mare cu buton -->
+				<div class="heroPicTextLeft"> <!--poza cu text -->
+					<img class="photovm-circle" alt="                              Vlad's photo" src="images/PhotoVM.png">
+					
+					<div class="vm-designcoderframe">
+                        <div class="vlad-marin">Vlad Marin</div>
+                        <div class="designer-coder">designer & coder</div>
+                    </div>
+				</div>
+			
+				<div class="TextButtonFrame"> <!--text Mare cu buton -->
+					<!-- <div class="container"> -->
+					<div class="crafting-digital-experiences"><h1>Crafting Digital Experiences</h1></div>
+					<div class="lets-kickstart-your">
+						Let's kickstart your online journey 
+						together, turning your ideas into 
+						brilliant digital masterpieces! 
+					</div>
+					<a class="button" href="mailto:your-email@example.com"  title="Let's Create Something Great Together! Contact via email...">
+						Hire me
+					</a>
+					<!-- </div> -->
+				</div>
+			</div>
+
+			<span class="contactSocialLineFrame">
+				<div class="social">
+					<a href="https://t.me/+37368681983" target="_blank"> 
+						<img class="iconoirtelegram" alt="TelegramContactIcon" title="contact me via Telegram!" src="images/hero/iconoir_telegram.svg">
+					</a>
+					<a href="https://www.linkedin.com/in/vlad-m-1027b5109/" target="_blank"> 
+						<img class="iconoirtelegram" alt="LinkedInContactIcon" title="contact me via LinkedIn!" src="images/hero/ph_linkedin-logo.svg">
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=37368681983" target="_blank"> 
+						<img class="iconoirtelegram" alt="Whatsapp Contact Icon" title="contact me via WhatsApp!" src="images/hero/ic_sharp-whatsapp.svg"> 
+					</a>
+					<a href="skype:username?chat" target="_blank"> 
+						<img class="iconoirtelegram" alt="Skype" title="contact me via Skype!" src="images/hero/la_skype.svg">
+					</a>
+				</div>
+				<div class="blueline">
+					<div class="blueline-child">
+					</div>
+				</div>
+			</span>
+
+		</div>
+		
+		
+	</section>
+	
+	
+<!-- skills section start-------------------------- -->
+<section id="skills" class="skills-section">
+	<div class="skills-content">
+		<h2>Skills</h2>
+		<div class="skillcardsframe">
+			<!-- sa schimb denumirea figmacard in skillcard, figmagroup in skillcardGroup, figmacardframe in skillcardFrame, figma in skilltext, figma-wrapper in skillcard-wrapper -->
+			<div class="figmacard"> 
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<img class="figma-tool" alt="" src="images/skills/figma.svg">
+							<div class="figma-wrapper">
+							<div class="figma">Figma</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figmacard">
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<div class="logo-uxui2">
+							<img class="logo-tool" alt="" src="images/skills/uxui.svg">
+						</div>
+						<div class="figma-wrapper">
+							<div class="figma">Design</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figmacard">
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<div class="logo-photoshop">
+							<img class="logo-tool" alt="" src="images/skills/photoshop.svg">
+						</div>
+						<div class="figma-wrapper">
+							<div class="figma">Photoshop</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figmacard">
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<div class="logo-css">
+							<img class="logo-tool" alt="" src="images/skills/css.svg">
+						</div>
+						<div class="figma-wrapper">
+							<div class="figma">CSS</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figmacard">
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<div class="logo-css">
+							<img class="logo-tool" alt="" src="images/skills/html.svg">
+						</div>
+						<div class="figma-wrapper">
+							<div class="figma">HTML</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figmacard">
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<div class="logo-css">
+							<img class="logo-tool" alt="" src="images/skills/js.svg">
+						</div>
+						<div class="figma-wrapper">
+							<div class="figma">JavaScript</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figmacard">
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<div class="logo-photoshop">
+							<img class="logo-tool" alt="" src="images/skills/git.svg">
+						</div>
+						<div class="figma-wrapper">
+							<div class="figma">Git</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figmacard">
+				<div class="figmagroup">
+					<div class="figmacardframe">
+						<div class="logo-linux-tux">
+							<img class="logo-tool" alt="" src="images/skills/linux.svg">
+						</div>
+						<div class="figma-wrapper">
+							<div class="figma">Linux</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</section>
+
+
+<!-- end skill section ----------------------- -->
+
+<!-- -------------------------- portofolio section start -->
+
+
+<section id="portfolio" class="portfolioSection">
+	<div class="portfolio-content">
+		<h2>Portfolio</h2>
+		<div class="portfoliocardsframe">
+					<div class="image"  id="i1" onclick="openModal('img1')">
+						<div class="motor-oils-parent">
+							<div class="cardTextLarge">Motor oils</div>
+							<div class="cardTextSmall">Hero section</div>
+						</div>
+					</div>
+					<div id="img1" class="modal">
+						<span class="close" onclick="closeModal('img1')">&times;</span>
+						<img class="modal-content-wide" src="images/portfolio/VaneaOil_HW1.png" alt="Imagine 1">
+					</div>
+
+					<!-- <div class="image1">
+					</div> -->
+				<!-- </div> -->
+				<div class="image" id="i2" onclick="openModal('img2')">
+					<div class="motor-oils-parent">
+						<div class="cardTextLarge">Apparel store</div>
+						<div class="cardTextSmall">One page design </div>
+					</div>
+				</div>
+				<div id="img2" class="modal">
+					<span class="close" onclick="closeModal('img2')">&times;</span>
+					<img class="modal-content-long" src="images/portfolio/StoreFull.png" alt="Imagine 1">
+				</div>
+
+				<div class="image" id="i3"  onclick="openModal('img3')">
+					<div class="motor-oils-parent">
+						<div class="cardTextLarge">NFT market</div>
+						<div class="cardTextSmall">Hero section</div>
+					</div>
+				</div>
+				<div id="img3" class="modal">
+					<span class="close" onclick="closeModal('img3')">&times;</span>
+					<img class="modal-content-wide" src="images/portfolio/NFT_market_full.png" alt="Imagine 1">
+				</div>
+
+				<div class="image"  id="i4" onclick="openModal('img4')">
+					<div class="motor-oils-parent">
+						<div class="cardTextLarge">Study platform</div>
+						<div class="cardTextSmall">Mobile app design </div>
+					</div>
+				</div>
+				<div id="img4" class="modal">
+					<span class="close" onclick="closeModal('img4')">&times;</span>
+					<img class="modal-content-wide" src="images/portfolio/MobileFull.png" alt="Imagine 1">
+				</div>
+
+
+
+				<div class="image" id="i5" onclick="openModal('img5')">
+					<div class="motor-oils-parent">
+						<div class="cardTextLarge">Game menu</div>
+						<div class="cardTextSmall">Design and prototyping</div>
+					</div>
+				</div>
+				<div id="img5" class="modal">
+					<span class="close" onclick="closeModal('img5')">&times;</span>
+					<img class="modal-content-long" src="images/portfolio/policeSim.png" alt="Imagine 1">
+				</div>
+				
+				<div class="image" id="i6" onclick="openModal('img6')">
+					<div class="motor-oils-parent">
+						<div class="cardTextLarge">Full functional site</div>
+						<div class="cardTextSmall">Figma designed - coded with vue</div>
+					</div>
+				</div>
+				<div id="img6" class="modal">
+					<span class="close" onclick="closeModal('img6')">&times;</span>
+					<img class="modal-content-wide" src="images/portfolio/hero_iepurasi.png" alt="Imagine 1">
+				</div>
+
+		</div>	
+			
+	</div>
+
+</section>
+
+<!-- 
+<div class="card" onclick="openModal('img1')">
+	<img src="images/portfolio/hero_iepurasi.png" alt="Imagine 1">
+</div>
+
+<div id="img1" class="modal">
+	<span class="close" onclick="closeModal('img1')">&times;</span>
+	<img class="modal-content" src="images/portfolio/StoreFull.svg" alt="Imagine 1">
+</div> -->
+
+<!-- end portofolio section ----------------------- -->
+
+<!-- -------------------------- about section start -->
+
+
+<section id="about" class="aboutSection">
+  	
+  	<div class="aboutContent">
+    		<!-- <div class="about">About</div> -->
+			<h2>About</h2>
+    		<div class="aboutcardframe">
+      			<div class="learnervalueproposalcard">
+        				<img class="icon-skill-lightbulb" alt="" src="images/about/grad2.svg">
         				
-      			</div>
-    		</div>
-    		<div class="herosection">
-      			<div class="vm-hero">
-        				<div class="fototextframe-301">
-          					<div class="fotonameframe-299">
-            						<img class="fotonameframe-299-child" alt="" src="img/Hero_vlads_photo.png">
-            						
-            						<div class="nameframe-298">
-              							<div class="vlad-marin">Vlad Marin</div>
-              							<div class="designer-coder">designer & coder</div>
-            						</div>
-          					</div>
-          					<div class="textbuttonframe-300">
-            						<b class="vlad-marin-container">
-              							<span>
-                								<span>VLAD MARIN</span>
-              							</span>
-              							<span class="designer-coder1">
-                								<span> - </span>
-                								<span>Designer & Coder</span>
-              							</span>
-            						</b>
-            						<div class="crafting-digital-experiences-parent">
-              							<b class="crafting-digital-experiences">Crafting Digital Experiences</b>
-              							<div class="lets-kickstart-your">Let's kickstart your online journey together, turning your ideas into brilliant digital masterpieces! </div>
-            						</div>
-            						<div class="buton-desktop-gpt-38x15" id="butonDesktopGpt38x15">
-              							<b class="hire-me">Hire me</b>
-            						</div>
-            						<div class="buton">
-              							<b class="hire-me">Hire Me</b>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="sociallineframe-325">
-          					<div class="social">
-            						<img class="iconoirtelegram" alt="" src="img/Hero_telegram.svg">
-            						
-            						<img class="iconoirtelegram" alt="" src="img/Hero_linkedinSus.svg">
-            						
-            						<img class="iconoirtelegram" alt="" src="img/Hero_whatsappSus.svg">
-            						
-            						<img class="iconoirtelegram" alt="" src="img/Hero_skypeSus.svg">
-            						
-          					</div>
-          					<div class="blueline">
-            						<div class="blueline-child">
-            						</div>
-          					</div>
+        				<div class="dedicated-learner-parent">
+          					<div class="dedicated-learner">Dedicated Learner</div>
+          					<div class="always-seeking-new">Always seeking new knowledge and skills to enhance my services</div>
         				</div>
       			</div>
-    		</div>
-    		<div class="skillsframe-360" data-scroll-to="skillsFrame360Container">
-      			<b class="skills1">Skills</b>
-      			<div class="skillcardsframe-321">
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<img class="logo-figma" alt="" src="img/Skills_figma_logo.svg">
-              							
-              							<div class="figma-wrapper">
-                								<div class="hire-me">Figma</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<div class="logo-uxui2">
-                								<img class="ru09vhw5imh1lxwig3wi-1-icon" alt="" src="img/Skills_UXUI_logo.svg">
-                								
-              							</div>
-              							<div class="figma-wrapper">
-                								<div class="hire-me">Design</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<div class="logo-photoshop">
-                								<img class="group-icon" alt="" src="img/Skills_ps_logo.svg">
-                								
-              							</div>
-              							<div class="figma-wrapper">
-                								<div class="hire-me">Photoshop</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<div class="logo-css">
-                								<img class="vector-icon" alt="" src="img/Skills_css_logo.svg">
-                								
-              							</div>
-              							<div class="figma-wrapper">
-                								<div class="hire-me">CSS</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<div class="logo-css">
-                								<img class="vector-icon" alt="" src="img/Skills_HTML_logo.svg">
-                								
-              							</div>
-              							<div class="figma-wrapper">
-                								<div class="hire-me">HTML</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<div class="logo-css">
-                								<img class="vector-icon2" alt="" src="img/Skills_js_logo.svg">
-                								
-              							</div>
-              							<div class="figma-wrapper">
-                								<div class="hire-me">JavaScript</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<div class="logo-photoshop">
-                								<img class="vector-icon2" alt="" src="img/Skills_git_logo.svg">
-                								
-              							</div>
-              							<div class="figma-wrapper">
-                								<div class="hire-me">Git</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="figmacard">
-          					<div class="figacardframe-313-wrapper">
-            						<div class="logo-uxui2-parent">
-              							<div class="logo-linux-tux">
-                								<img class="vector-icon2" alt="" src="img/Skills_linuxtux_logo.svg">
-                								
-              							</div>
-              							<div class="figma-wrapper">
-                								<div class="hire-me">Linux</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-      			</div>
-    		</div>
-    		<div class="portfolioframe1" data-scroll-to="portfolioFrameContainer">
-      			<b class="skills1">Portfolio</b>
-      			<div class="portfoliocardsframe">
-        				<div class="portfoliopictextdeskcovered">
-          					<div class="image">
-            						<div class="project-title-parent">
-              							<div class="hire-me">Motor oils</div>
-              							<div class="project-description-text">Hero section</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="portfoliopictextdeskcovered">
-          					<div class="image">
-            						<div class="project-title-parent">
-              							<div class="hire-me">Apparel store</div>
-              							<div class="project-description-text">One page design </div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="portfoliopictextdeskcovered">
-          					<div class="image">
-            						<div class="project-title-parent">
-              							<div class="hire-me">NFT market</div>
-              							<div class="project-description-text">Hero section</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="portfoliopictextdeskcovered">
-          					<div class="image">
-            						<div class="project-title-parent">
-              							<div class="hire-me">Study platform</div>
-              							<div class="project-description-text">Mobile app design </div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="portfoliopictextdeskcovered">
-          					<div class="image">
-            						<div class="project-title-parent">
-              							<div class="hire-me">Responsive</div>
-              							<div class="project-description-text">3 device display design sizes</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="portfoliopictextdeskcovered">
-          					<div class="image">
-            						<div class="project-title-parent">
-              							<div class="hire-me">Full functional site</div>
-              							<div class="project-description-text">Figma designed - coded with vue</div>
-            						</div>
-          					</div>
-        				</div>
-      			</div>
-    		</div>
-    		<div class="aboutframe1" data-scroll-to="aboutFrameContainer">
-      			<div class="skills1">About</div>
-      			<div class="aboutcardframe-364">
-        				<div class="learnervalueproposalcard">
-          					<img class="icon-skill-lightbulb" alt="" src="img/About_DLearn.svg">
-          					
-          					<div class="dedicated-learner-parent">
-            						<div class="dedicated-learner">Dedicated Learner</div>
-            						<div class="always-seeking-new">Always seeking new knowledge and skills to enhance my services</div>
-          					</div>
-        				</div>
-        				<div class="learnervalueproposalcard">
-          					<img class="icon-skill-lightbulb" alt="" src="img/About_LightBulb.svg">
-          					
-          					<div class="dedicated-learner-parent">
-            						<div class="dedicated-learner">Creative Problem Solver</div>
-            						<div class="always-seeking-new">Ability to find creative solutions to any challenge ensuring innovative results</div>
-          					</div>
-        				</div>
-        				<div class="learnervalueproposalcard">
-          					<img class="icon-skill-lightbulb" alt="" src="img/About_ADetail.svg">
-          					
-          					<div class="dedicated-learner-parent">
-            						<div class="dedicated-learner">Attention to Detail</div>
-            						<div class="always-seeking-new">Paying attention to every detail of my projects to deliver superior quality work</div>
-          					</div>
-        				</div>
-        				<div class="learnervalueproposalcard">
-          					<img class="icon-skill-lightbulb" alt="" src="img/About_ECommunic.svg">
-          					
-          					<div class="dedicated-learner-parent">
-            						<div class="dedicated-learner">Effective Communicator</div>
-            						<div class="always-seeking-new">Open and clear communication for smooth interactions and positive outcomes</div>
-          					</div>
-        				</div>
-        				<div class="learnervalueproposalcard">
-          					<img class="icon-skill-lightbulb" alt="" src="img/About_PCollab.svg">
-          					
-          					<div class="dedicated-learner-parent">
-            						<div class="dedicated-learner">Passionate Collaborator</div>
-            						<div class="always-seeking-new">Collaboration, synergy and achieving team results are essential in my work</div>
-          					</div>
-        				</div>
-        				<div class="learnervalueproposalcard">
-          					<img class="icon-skill-lightbulb" alt="" src="img/About_Customer.svg">
-          					
-          					<div class="dedicated-learner-parent">
-            						<div class="dedicated-learner">Customer-Oriented</div>
-            						<div class="always-seeking-new">My focus on customer satisfaction ensures services meet their expectations.</div>
-          					</div>
-        				</div>
-      			</div>
-    		</div>
-    		<div class="footer-desktop-en">
-      			<div class="logomenuframe-260">
-        				<img class="logovm-img2only" alt="" src="img/Footer_LogoVM.svg" id="logoVMImg2Only">
+      			<div class="learnervalueproposalcard">
+        				<img class="icon-skill-lightbulb" alt="" src="images/about/lightbulb.svg">
         				
-        				<div class="menufooter">
-          					<div class="homeframe">
-            						<div class="home1">Home</div>
-          					</div>
-          					<div class="homeframe">
-            						<div class="home1">Skills</div>
-          					</div>
-          					<div class="homeframe">
-            						<div class="home1">Portfolio</div>
-          					</div>
-          					<div class="homeframe">
-            						<div class="home1">About</div>
-          					</div>
+        				<div class="dedicated-learner-parent">
+          					<div class="dedicated-learner">Creative Problem Solver</div>
+          					<div class="always-seeking-new">Ability to find creative solutions to any challenge ensuring innovative results</div>
         				</div>
       			</div>
-      			<div class="socialrightsframe-261">
-        				<div class="icons-social">
-          					<img class="iconoirtelegram1" alt="" src="img/Footer_iconoir_telegram.png">
-          					
-          					<img class="iconoirtelegram1" alt="" src="img/Footer_ph_linkedin-logo.png">
-          					
-          					<img class="iconoirtelegram1" alt="" src="img/Footer_ic_sharp-whatsapp.png">
-          					
-          					<img class="iconoirtelegram1" alt="" src="img/Footer_la_skype.png">
-          					
+      			<div class="learnervalueproposalcard">
+        				<img class="icon-skill-lightbulb" alt="" src="images/about/mingcuteCompass.svg">
+        				
+        				<div class="dedicated-learner-parent">
+          					<div class="dedicated-learner">Attention to Detail</div>
+          					<div class="always-seeking-new">Paying attention to every detail of my projects to deliver superior quality work</div>
         				</div>
-        				<div class="copyright">
-          					<img class="solarcopyright-outline-icon" alt="" src="img/Footer_copyright.svg">
-          					
-          					<div class="search">2024 Copyright. All rights reserved</div>
+      			</div>
+      			<div class="learnervalueproposalcard">
+        				<img class="icon-skill-lightbulb" alt="" src="images/about/megaphone.svg">
+        				
+        				<div class="dedicated-learner-parent">
+          					<div class="dedicated-learner">Effective Communicator</div>
+          					<div class="always-seeking-new">Open and clear communication for smooth interactions and positive outcomes</div>
+        				</div>
+      			</div>
+      			<div class="learnervalueproposalcard">
+        				<img class="icon-skill-lightbulb" alt="" src="images/about/passionateColaborator.svg">
+        				
+        				<div class="dedicated-learner-parent">
+          					<div class="dedicated-learner">Passionate Collaborator</div>
+          					<div class="always-seeking-new">Collaboration, synergy and achieving team results are essential in my work</div>
+        				</div>
+      			</div>
+      			<div class="learnervalueproposalcard">
+        				<img class="icon-skill-lightbulb" alt="" src="images/about/starNew.svg">
+        				
+        				<div class="dedicated-learner-parent">
+          					<div class="dedicated-learner">Customer-Oriented</div>
+          					<div class="always-seeking-new">My focus on customer satisfaction ensures services meet their expectations.</div>
         				</div>
       			</div>
     		</div>
-  	</div>
-  	
-  	
-  	
-  	
-  	<script>
-    		var skillsFrameContainer = document.getElementById("skillsFrameContainer");
-    		if(skillsFrameContainer) {
-      			skillsFrameContainer.addEventListener("click", function () {
-        				var anchor = document.querySelector("[data-scroll-to='skillsFrame360Container']");
-        				if(anchor) {
-          					anchor.scrollIntoView({"block":"start","behavior":"smooth"}) }
-      			});
-    		}
-    		
-    		
-    		var portfolioFrameContainer = document.getElementById("portfolioFrameContainer");
-    		if(portfolioFrameContainer) {
-      			portfolioFrameContainer.addEventListener("click", function () {
-        				var anchor = document.querySelector("[data-scroll-to='portfolioFrameContainer']");
-        				if(anchor) {
-          					anchor.scrollIntoView({"block":"start","behavior":"smooth"}) }
-      			});
-    		}
-    		
-    		
-    		var aboutFrameContainer = document.getElementById("aboutFrameContainer");
-    		if(aboutFrameContainer) {
-      			aboutFrameContainer.addEventListener("click", function () {
-        				var anchor = document.querySelector("[data-scroll-to='aboutFrameContainer']");
-        				if(anchor) {
-          					anchor.scrollIntoView({"block":"start","behavior":"smooth"}) }
-      			});
-    		}
-    		
-    		
-    		var roText = document.getElementById("roText");
-    		if(roText) {
-      			roText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var butonDesktopGpt38x15 = document.getElementById("butonDesktopGpt38x15");
-    		if(butonDesktopGpt38x15) {
-      			butonDesktopGpt38x15.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var logoVMImg2Only = document.getElementById("logoVMImg2Only");
-    		if(logoVMImg2Only) {
-      			logoVMImg2Only.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+  	</div>  	
+</section>
+
+
+<!-- end about section ----------------------------- -->
+
+<!-- -------------------------- footer section start -->
+
+
+<section class="footer-section">
+		  
+	<div class="footer-content">
+		<div >
+			<a href="#hero">
+				<img class="logovm-img2only" alt="Vlad Marin - designer & coder logo" src="images/footer/img2Only.svg" id="logoVMImg2Only" title="Vlad Marin : designer & coder. Email me...">
+			</a>
+		</div>
+
+		<div class="socialrightsframe">
+				
+			<div class="textfooterframe">						
+				<div>Let's craft digital experiences together!</div>
+			</div>	
+
+			<div class="icons-social-footer">
+				<img class="iconoirtelegram-footer" alt="" src="/images/footer/telegram.svg">
+				
+				<img class="iconoirtelegram-footer" alt="" src="/images/footer/Linkedin.svg">
+				
+				<img class="iconoirtelegram-footer" alt="" src="/images/footer/Whatsapp.svg">
+				
+				<img class="iconoirtelegram-footer" alt="" src="/images/footer/skype.svg">		
+			</div>
+
+			<div class="copyrightframe">
+				<img class="copyrightsymbol-icon" alt="" src="/images/footer/copyright.svg">
+				
+				<div class="copyright-all-rights">2025 Copyright. All rights reserved.</div>
+			</div>
+		</div>
+	</div>
+</section>		  
+		  
+		  
+<!-- experiment start>>> -->
+
+
+		  
+		  <!-- <script>
+				var logoVMImg2Only = document.getElementById("logoVMImg2Only");
+				if(logoVMImg2Only) {
+					  logoVMImg2Only.addEventListener("click", function (e) {
+							// Add your code here
+					  });
+				}</script> -->
+
+
+<!-- end experiment>>> -->
+
+
+<script src="js/scriptTech.js"></script>
+
+</body>
 </html>
