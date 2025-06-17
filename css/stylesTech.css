@@ -1533,7 +1533,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         padding: 0px 24px;
         box-shadow: 0px 8px 16px rgba(79, 89, 94, 0.08), 0px 6px 8px rgba(79, 89, 94, 0.1);
         box-sizing: border-box;
-
+        background-color: #0073A2; 
         
     } 
 
