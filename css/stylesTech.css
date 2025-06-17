@@ -1382,9 +1382,9 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         flex-direction: column;
         align-items: center;
         justify-content: space-between;;
-        padding: 32px 24px 24px;
+        padding: 14px 24px 24px;
         text-align: center;
-        height: 222px;
+        height: 154px;
         /* transform: translateY(0px) !important; */
 
 
@@ -1397,9 +1397,10 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         margin: 0 !important;
         /* left: 24px; */
         height: auto; /* Lasă-l să se ajusteze */
-       
         /* height: 2px; */
         flex-wrap: wrap;
+        gap: 6px; /* Control asupra spațiilor între elemente */
+
     }
 
     .logo, .justLogo {
@@ -1412,7 +1413,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         align-self: flex-start; /* Se asigură că nu este împins */
         align-items: center; 
         gap: 18px; 
-         margin-left: 18px;
+        margin-left: 18px;
         
         /* flex: 1 1 100%; Ocupă toată lățimea */
         
@@ -1424,7 +1425,8 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .photovm-circle_sur {
         display: flex;
-        width: 36%;
+        width: 28%;
+        /* width: 36%; */
         /* border-radius: 50%; */
 
     }  
@@ -1486,7 +1488,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .hero-content { 
 
-        padding: 188px 24px 96px;
+        padding: 248px 24px 146px;
         
     } 
     
@@ -1541,9 +1543,26 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     } 
 
+    .skills-content { 
+       
+        padding-top: 8px;
+        padding-bottom: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
+ /* padding: top right bottom left */ 
+    }
+    .skills-content h2{ 
+        text-align: left;       
+        font-size: 36px; 
+        /* font-style: normal; */ 
+        font-weight: 700; 
+        line-height: 58px; /* 120.833% */ 
+        letter-spacing: 0.36px; /* 1% din 16px = 0.01 * 16px = 0.16px */ 
+        padding-left: 24px; 
+    } 
 
     .skillcardsframe { 
-        gap: 10px;
+        gap: 20px;
     }
     
     .figma-wrapper {
@@ -1568,8 +1587,16 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
     }
 
 
+    .portfolio-content { 
+        padding: 8px 156px 96px; /* Spațiere interioară padding: top right bottom left */ 
+        color: var(--text-color, #c8c8d0); /* Utilizare variabilă CSS pentru culoare */ 
+  
+    }
 
 
+    .aboutContent{ 
+        padding: 8px 156px 96px; /* padding: top right bottom left */ 
+    }
 
 
 /* .hire-me {
