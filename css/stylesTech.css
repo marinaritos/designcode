@@ -1588,6 +1588,34 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
   
     }
 
+    .modal { 
+        
+        margin-top: 154px; /* Ajustează spațiul pentru ecrane mici */
+         
+    } 
+     
+    .modal-content-long { 
+        /* margin: 5% auto; 
+        display: block; 
+        width: auto; 
+        width: 70%;  */
+        /* max-width: 700px;  */
+    } 
+     
+    .modal-content-wide { 
+        /* margin: 5% auto; 
+        display: block; 
+        width: auto; 
+        max-width: 90%; 
+        height: auto; 
+        max-height: 80%;  */
+    } 
+
+
+
+
+
+
 
     .aboutContent{ 
         padding: 8px 156px 96px; /* padding: top right bottom left */ 
