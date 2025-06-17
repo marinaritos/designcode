@@ -1488,15 +1488,10 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .hero-content { 
 
-        padding: 184px 24px 146px;
+        padding: 184px 24px 172px;
         
     } 
     
-
-
-
-
-   
 
     .crafting-digital-experiences h1{ 
         width: 100%;
@@ -1562,7 +1557,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
     } 
 
     .skillcardsframe { 
-        gap: 20px;
+        gap: 24px;
     }
     
     .figma-wrapper {
