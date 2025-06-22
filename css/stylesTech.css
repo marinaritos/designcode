@@ -19,7 +19,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center; /* Aliniază vertical */
-    padding: 0px 156px; 
+    /* padding: 0px 156px;  */
+
+    padding: 0px 3%; 
     box-sizing: border-box;
 
         /* border: 4px solid rgb(146, 221, 231);  */
@@ -150,13 +152,14 @@ nav ul li a:hover {
  
     width: 100%; /* Responsiv */
     max-width: 1440px; /* Limitează lățimea */ 
-    padding: 154px 156px; 
+    /* padding: 154px 156px 230px 156px; top right bottom left */
+    padding: 10% 10% 16% 10%;
     margin: 0 auto; /* Centrează conținutul */
 
     background-color: #e6e8e8; 
     /* background-color: #8485a2;  */
 
-    gap: 10px; 
+    /* gap: 10px;  */
     box-sizing: border-box; /* Include padding și border */
     overflow: hidden; 
     /*text-align: center;  Aliniere centrală pe ecrane înguste */
@@ -178,7 +181,9 @@ nav ul li a:hover {
     color: #424a4e; 
     box-sizing: border-box; /* Include border și padding în calculul lățimii, no ctoto nu vre */ 
  
-    /* border: 4px solid rgb(116, 234, 165);  */
+    margin: 0 auto; /* Centrează conținutul */
+
+    border: 4px solid rgb(116, 234, 165); 
 } 
  
 /* Imagine și text pe stânga */
@@ -210,10 +215,18 @@ nav ul li a:hover {
     /* border: 4px solid rgb(252, 255, 158); */ 
 } 
 
+.photovm-circle {
+    /* gap: 0px; */
+    width: 20vw;
+
+    
+    /* width: auto; */
+}
 /* Nume */
 /* .hero-content  */
 .vlad-marin{ 
-    font-size: 54px; 
+    /* font-size: 54px;  */
+    font-size: 3.5vw;
     line-height: 68px; 
     color: #424a4e; 
     text-align: center; 
@@ -224,7 +237,9 @@ nav ul li a:hover {
 /* Descriere rol */
 /* .hero-content  */
 .designer-coder{ 
-    font-size: 32px; 
+    font-size: 2.1vw;
+
+    /* font-size: 32px;  */
     line-height: 38px; 
     color: #9191a1; 
     text-align: center;  
@@ -247,23 +262,29 @@ nav ul li a:hover {
     flex-direction: column; 
     align-items: flex-start; 
     justify-content: center; 
-    gap: 24px; 
+    gap: 2vw;; 
+    /* gap: 24px;  */
     text-align: left;
     width: 100%; 
     /* color: #353b3e;  */
     /* height: 100%;  */
 
-    /*!!!!!!!!! border: 4px solid rgb(144, 104, 218);  */
+    border: 4px solid rgb(144, 104, 218); 
 } 
 
 /* Titlu principal */
 /* .hero-content  */
 .crafting-digital-experiences h1{ 
-    font-size: 56px; 
-    line-height: 68px; 
+    /* font-size: 56px;  */
+    font-size:4vw; 
+    line-height:4.5vw;
+
+    /* line-height: 68px;  */
     color: #353b3e;
     margin: 0; /*adaugat la cplt*/
     text-align: left; 
+    border: 4px solid rgb(144, 104, 218); 
+
 } 
 
 
@@ -273,12 +294,14 @@ nav ul li a:hover {
     /* width: 671px;  */
     width: 80%;
     position: relative; 
-    font-size: 40px; 
-    line-height: 50px; 
+    /* font-size: 40px;  */
+    font-size:2.5vw; 
+    line-height:3.5vw;
+    /* line-height: 50px;  */
     color: #586368; 
     text-align: left; 
     /* display: inline-block;  */
-        /* border: 4px solid rgb(144, 104, 218);  */
+        border: 4px solid rgb(144, 104, 218); 
 
 } 
 
@@ -324,7 +347,7 @@ nav ul li a:hover {
     /* right: 162px;  */
     /* bottom: 100px;  */
     /*bottom: 0;  Aliniere la marginea de jos */
-    /* border: 4px solid rgb(81, 226, 49); */ 
+    /* border: 4px solid rgb(81, 226, 49);  */
 
 } 
 .social { 
@@ -337,7 +360,7 @@ nav ul li a:hover {
     /* align-items: flex-start; 
     justify-content: flex-start;  */
 
-    /* border: 4px solid rgb(226, 49, 108); */ 
+    /* border: 4px solid rgb(226, 49, 108);  */
 
 } 
 /* svg {
@@ -381,9 +404,9 @@ nav ul li a:hover {
         
 .blueline-child { 
     width: 2px; 
-    height: 110px; 
+    height: 20vh; 
     background: linear-gradient(360deg, #586368 0%, rgba(0, 73, 103, 0.00) 100%); 
-    /* background: linear-gradient(360deg, #28d3d3 0%, rgba(0, 73, 103, 0.00) 100%); */ 
+    /* background: linear-gradient(360deg, #28d3d3 0%, rgba(0, 73, 103, 0.00) 100%);  */
 
 
 } 
@@ -394,8 +417,11 @@ nav ul li a:hover {
     gap: 10px; 
 
     position: absolute; 
-    right: 5px; 
-    bottom: -130px; 
+    right: 5px;
+    bottom:-142.17% 
+    /* bottom: -157px;  */
+        /* border: 4px solid rgb(226, 49, 108);  */
+
 } 
      
 
@@ -1069,6 +1095,15 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 /* Large (laptopuri mici) 1400*/
 
 @media (max-width: 1430px) {
+    header {
+        /* height: 60px; */
+        padding: 0px 10%;
+    }
+
+    .hero-content {    
+        /* padding: 154px 3%;  */
+        /* padding: 154px 132px;  */
+    }
 
     .heroPicTextAll{     
         gap: 54px; 
@@ -1081,70 +1116,102 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* border: 4px solid rgb(39, 74, 231); */ 
     } 
 
-    .photovm-circle {
+    /* .photovm-circle {
         width: 95%;
-    }
+    } */
 
     .vlad-marin {
-        font-size: 48px; /* Dimensiuni mai mari pe tablete */
+        font-size: 3.5vw;
+        /* font-size: 48px;  */
+        /* Dimensiuni mai mari pe tablete */
         line-height: 62px; 
     }
 
     .designer-coder {
-        font-size: 28px;
+        /* font-size: 28px; */
         line-height: 36px;
     }
 
     .crafting-digital-experiences h1{ 
-        font-size: 48px; 
+        /* font-size: 48px;  */
         line-height: 62px; 
     } 
 
     .lets-kickstart-your {
-        font-size: 36px;
+        /* font-size: 36px; */
         line-height: 46px;
+    }
+
+    .button { 
+        
+        background-color: #00a26f; 
+        
+    } 
+
+
+     .contactSocialLineFrame { 
+        right: 0; 
+        top: 51%; 
+        transform: translateX(-442%); 
+        
     }
 
 }
 
 @media (max-width: 1360px) {
+
+   
+
     .heroPicTextAll{     
         gap: 42px; 
     } 
 
     .crafting-digital-experiences h1{ 
-        font-size: 44px; 
+        /* font-size: 44px;  */
         line-height: 60px; 
     } 
 
     .lets-kickstart-your {
-        font-size: 32px;
+        /* font-size: 32px; */
         line-height: 42px;
     }
 
-    .photovm-circle {
+    /* .photovm-circle {
         gap: 4px;
         width: 90%;
-    }
+    } */
 
     .vlad-marin {
-        font-size: 38px; /* Dimensiuni mai mari pe tablete */
+        
+        /* font-size: 38px;  */
+        /* Dimensiuni mai mari pe tablete */
         line-height: 54px; 
 
     }
 
     .designer-coder {
-        font-size: 24px;
+        /* font-size: 24px; */
         line-height: 30px;
     }
+
+    .button { 
+        
+        background-color: #2fff00; 
+        
+    } 
+
+    
 
 }
 
 
 @media (max-width: 1280px) {
 
+    header {
+        /* height: 60px; */
+        padding: 0px 10%;
+    }
     .hero-content {    
-        padding: 154px 132px; 
         gap: 10px; 
     }
 
@@ -1157,13 +1224,37 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
 @media (max-width: 1210px) {
 
-    .hero-content {    
-        padding: 154px 112px; 
-        gap: 10px; 
+    header {
+        /* height: 60px; */
+        padding: 0px 10%;
     }
+ 
+    .crafting-digital-experiences h1{ 
+        /* font-size: 56px;  */
+        font-size:3.5vw;
+        line-height: 68px; 
+        width: 100%;
+    
+    } 
+    
+    
+    /* Subtitlu */
+    /* .hero-content */
+    .lets-kickstart-your{ 
+        /* width: 671px;  */
+        width: 85%;
+        /* font-size: 40px;  */
+        /* font-size:2.5vw;  */
+        /* line-height: 50px;  */
+        
+            border: 4px solid rgb(144, 104, 218); 
+    
+    } 
+    
+
 
     .button { 
-        background-color: #b4dcec; 
+        background-color: #6666a9; 
 
     }
 
@@ -1173,11 +1264,17 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     header {
         /* height: 60px; */
-        padding: 0px 130px; 
+        /* padding: 0px 130px;  */
+       
+            /* height: 60px; */
+            padding: 0px 10%;
+        
     }
 
     .hero-content {    
-        padding: 154px 68px; 
+        
+        /* padding: 154px 3%;  */
+        /* padding: 154px 68px;  */
         /* gap: 100px;  */
     }
 
@@ -1189,31 +1286,33 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         gap: 18px; 
     } */
 
-    .photovm-circle {
+    /* .photovm-circle {
         gap: 0px;
         width: 85%;
-    }
+    } */
 
     .button { 
-        background-color: #c1e0ec; 
+        background-color: #cdc1ec; 
     }
 
-    .contactSocialLineFrame { 
-        right: 0; /* Aliniere la marginea dreaptă */
+    /* .contactSocialLineFrame { 
+        right: 0; 
         top: 51%; 
         transform: translateX(-442%); 
         
-    }
+    } */
 }
 
 @media (max-width: 1100px) {
     header {
         /* height: 60px; */
-        padding: 0px 40px; 
+        padding: 0px 10%;
     }
 
     .hero-content {    
-        padding: 154px 40px; 
+        /* padding: 154px 3%;  */
+        
+        /* padding: 154px 40px;  */
         /* gap: 100px;  */
     }
 
@@ -1221,14 +1320,19 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         gap: 18px; 
     } 
 
+    .TextButtonFrame{ 
+        gap: 1.8vw; 
+     
+    } 
+
     .button { 
         background-color: #641960; 
     }
 
     .contactSocialLineFrame { 
-        right: 0; /* Aliniere la marginea dreaptă */
+        /* right: 0; 
         top: 51%; 
-        transform: translateX(-158%); 
+        transform: translateX(-158%);  */
     }
 
 
@@ -1280,38 +1384,84 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
 }
 
-/* @media (max-width: 1024px) {
+
+
+
+@media (max-width: 1024px) {
+
+    header {
+        /* height: 60px; */
+        padding: 0px 10%;
+    }
+    
 
     .hero-content {    
-        padding: 154px 10%; 
-        gap: 10px; 
+        /* padding: 154px 3%;  */
+        /* gap: 10px;  */
+       
+        /* padding: 154px 40px;  */
+
     }
+
+    .heroPicTextAll{     
+        /* gap: 18px;  */
+    } 
+
+    .photovm-circle { 
+        /* gap: 110px; */
+        /* width: 20vw; */
+
+        
+        /* width: auto; */
+     }
+     .lets-kickstart-your{ 
+        /* font-size: 56px;  */
+        line-height:3.5vw; 
+    
+    } 
+     
+
 
     .button { 
         background-color: #19b0eb; 
 
     }
 
-} */
+    .contactSocialLineFrame { 
+        right: 0; 
+        top: 51%; 
+        transform: translateX(-298%); 
+    }
 
 
-/* @media (max-width: 1080px) {
+}
+
+
+@media (max-width: 800px) {
+
+    
 
     .hero-content {    
-        padding: 154px 400px; 
+        /* padding: 154px 400px;  */
         gap: 10px; 
     }
 
     .heroPicTextAll{     
-        gap: 42px; 
+        /* gap: 42px;  */
     } 
+    .lets-kickstart-your{ 
+        /* font-size: 56px;  */
+        line-height:3.5vw; 
+    
+    } 
+    
 
     .button { 
         background-color: #305564; 
 
     }
 
-} */
+}
 
 
 /* @media (max-width: 1360px) { */
@@ -1364,9 +1514,9 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
 /* Small (telefoane mai mari) */
 @media (max-width: 768px) {
-    .photovm-circle {
+    /* .photovm-circle {
         width: 60%;
-    }   
+    }    */
     
 }
 
@@ -1534,6 +1684,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         box-shadow: 0px 8px 16px rgba(79, 89, 94, 0.08), 0px 6px 8px rgba(79, 89, 94, 0.1);
         box-sizing: border-box;
         background-color: #0073A2; 
+        /* background-color: #641960;  */
         
     } 
 
