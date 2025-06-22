@@ -176,7 +176,8 @@ nav ul li a:hover {
     flex-wrap: wrap; 
  
     width: 100%; 
-    gap: 64px; 
+    gap: 3vw;
+    /* gap: 64px;  */
     text-align: center; 
     color: #424a4e; 
     box-sizing: border-box; /* Include border și padding în calculul lățimii, no ctoto nu vre */ 
@@ -292,7 +293,7 @@ nav ul li a:hover {
 /* .hero-content */
 .lets-kickstart-your{ 
     /* width: 671px;  */
-    width: 80%;
+    width: 75%;
     position: relative; 
     /* font-size: 40px;  */
     font-size:2.5vw; 
@@ -1138,6 +1139,8 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
     } 
 
     .lets-kickstart-your {
+        width: 75%;
+
         /* font-size: 36px; */
         line-height: 46px;
     }
@@ -1242,7 +1245,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
     /* .hero-content */
     .lets-kickstart-your{ 
         /* width: 671px;  */
-        width: 85%;
+        /* width: 75%; */
         /* font-size: 40px;  */
         /* font-size:2.5vw;  */
         /* line-height: 50px;  */
@@ -1317,7 +1320,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
     }
 
     .heroPicTextAll{     
-        gap: 18px; 
+        /* gap: 18px;  */
     } 
 
     .TextButtonFrame{ 
@@ -1429,7 +1432,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .contactSocialLineFrame { 
         right: 0; 
-        top: 51%; 
+        top:41%; 
         transform: translateX(-298%); 
     }
 
@@ -1450,6 +1453,8 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* gap: 42px;  */
     } 
     .lets-kickstart-your{ 
+        /* width: 75%; */
+
         /* font-size: 56px;  */
         line-height:3.5vw; 
     
