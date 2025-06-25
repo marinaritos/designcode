@@ -21,7 +21,7 @@ header {
     align-items: center; /* Aliniază vertical */
     /* padding: 0px 156px;  */
 
-    padding: 0px 3%; 
+    padding: 0px 10%; 
     box-sizing: border-box;
 
         /* border: 4px solid rgb(146, 221, 231);  */
@@ -151,7 +151,10 @@ nav ul li a:hover {
     align-items: center; 
  
     width: 100%; /* Responsiv */
-    max-width: 1440px; /* Limitează lățimea */ 
+    /* max-width: 1440px;  */
+    /* Limitează lățimea */ 
+    max-width: 1600px; /* Limitează lățimea */ 
+
     /* padding: 154px 156px 230px 156px; top right bottom left */
     padding: 10% 10% 16% 10%;
     margin: 0 auto; /* Centrează conținutul */
@@ -218,16 +221,16 @@ nav ul li a:hover {
 
 .photovm-circle {
     /* gap: 0px; */
-    width: 20vw;
+    /* width: 20vw; */
 
     
-    /* width: auto; */
+    width: auto;
 }
 /* Nume */
 /* .hero-content  */
 .vlad-marin{ 
-    /* font-size: 54px;  */
-    font-size: 3.5vw;
+    font-size: 54px; 
+    /* font-size: 3.5vw; */
     line-height: 68px; 
     color: #424a4e; 
     text-align: center; 
@@ -238,9 +241,9 @@ nav ul li a:hover {
 /* Descriere rol */
 /* .hero-content  */
 .designer-coder{ 
-    font-size: 2.1vw;
+    /* font-size: 2.1vw; */
 
-    /* font-size: 32px;  */
+    font-size: 32px; 
     line-height: 38px; 
     color: #9191a1; 
     text-align: center;  
@@ -276,11 +279,11 @@ nav ul li a:hover {
 /* Titlu principal */
 /* .hero-content  */
 .crafting-digital-experiences h1{ 
-    /* font-size: 56px;  */
-    font-size:4vw; 
-    line-height:4.5vw;
+    font-size: 56px; 
+    /* font-size:4vw; 
+    line-height:4.5vw; */
 
-    /* line-height: 68px;  */
+    line-height: 68px; 
     color: #353b3e;
     margin: 0; /*adaugat la cplt*/
     text-align: left; 
@@ -293,12 +296,12 @@ nav ul li a:hover {
 /* .hero-content */
 .lets-kickstart-your{ 
     /* width: 671px;  */
-    width: 75%;
+    width: 85%;
     position: relative; 
-    /* font-size: 40px;  */
-    font-size:2.5vw; 
-    line-height:3.5vw;
-    /* line-height: 50px;  */
+    font-size: 40px; 
+    /* font-size:2.5vw; 
+    line-height:3.5vw; */
+    line-height: 50px; 
     color: #586368; 
     text-align: left; 
     /* display: inline-block;  */
@@ -340,15 +343,19 @@ nav ul li a:hover {
     align-items: center; 
     gap: 12px; 
     right: 0; /* Aliniere la marginea dreaptă */
-    top: 51%; 
-    transform: translateX(-522%); 
+    top: 26vw;
+    /* top: 48%;  */
+    /* top: 51%;  */
+    transform: translateX(-11.2vw);
+    /* transform: translateX(-772%);
+    transform: translateX(-552%);  */
     opacity: 0.6;
 
 
     /* right: 162px;  */
     /* bottom: 100px;  */
     /*bottom: 0;  Aliniere la marginea de jos */
-    /* border: 4px solid rgb(81, 226, 49);  */
+    border: 4px solid rgb(81, 226, 49); 
 
 } 
 .social { 
@@ -405,7 +412,8 @@ nav ul li a:hover {
         
 .blueline-child { 
     width: 2px; 
-    height: 20vh; 
+    height: 34vh; 
+    /* height: 27vh;  */
     background: linear-gradient(360deg, #586368 0%, rgba(0, 73, 103, 0.00) 100%); 
     /* background: linear-gradient(360deg, #28d3d3 0%, rgba(0, 73, 103, 0.00) 100%);  */
 
@@ -1098,7 +1106,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 @media (max-width: 1430px) {
     header {
         /* height: 60px; */
-        padding: 0px 10%;
+        /* padding: 0px 10%; */
     }
 
     .hero-content {    
@@ -1117,9 +1125,9 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* border: 4px solid rgb(39, 74, 231); */ 
     } 
 
-    /* .photovm-circle {
-        width: 95%;
-    } */
+    .photovm-circle {
+        width: 20vw;
+    } 
 
     .vlad-marin {
         font-size: 3.5vw;
@@ -1130,34 +1138,50 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .designer-coder {
         /* font-size: 28px; */
+        font-size: 2.1vw;
         line-height: 36px;
     }
 
     .crafting-digital-experiences h1{ 
         /* font-size: 48px;  */
-        line-height: 62px; 
+        /* line-height: 62px;  */
+        font-size:4vw; 
+        line-height:4.5vw;
     } 
 
     .lets-kickstart-your {
         width: 75%;
-
+        font-size:2.5vw; 
+        line-height:3.5vw;
         /* font-size: 36px; */
-        line-height: 46px;
+        /* line-height: 46px; */
     }
 
     .button { 
-        
-        background-color: #00a26f; 
-        
+        background-color: #00a26f;         
     } 
-
 
      .contactSocialLineFrame { 
         right: 0; 
-        top: 51%; 
-        transform: translateX(-442%); 
-        
+        /* top:48%;  */
+        /* transform: translateX(-442%);  */
+        transform: translateX(-10.4vw);     
     }
+
+    .blueline-child { 
+        height: 20vh; 
+    
+    } 
+
+    .blueline { 
+        right: 5px;
+        bottom:-92.17% 
+        /* bottom:-82.17%  */
+        /* bottom: -157px;  */
+            /* border: 4px solid rgb(226, 49, 108);  */
+    
+    } 
+
 
 }
 
@@ -1234,9 +1258,9 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
  
     .crafting-digital-experiences h1{ 
         /* font-size: 56px;  */
-        font-size:3.5vw;
+        /* font-size:3.5vw;
         line-height: 68px; 
-        width: 100%;
+        width: 100%; */
     
     } 
     
@@ -1250,16 +1274,36 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* font-size:2.5vw;  */
         /* line-height: 50px;  */
         
-            border: 4px solid rgb(144, 104, 218); 
+            /* border: 4px solid rgb(144, 104, 218);  */
     
     } 
-    
-
 
     .button { 
         background-color: #6666a9; 
 
     }
+
+    .contactSocialLineFrame { 
+        right: 0; 
+        /* top:38%;  */
+        /* transform: translateX(-442%);  */
+        transform: translateX(-10.4vw);     
+    }
+
+    .blueline-child { 
+        height: 20vh; 
+    
+    } 
+
+    .blueline { 
+        right: 5px;
+        bottom:-92.17% 
+        /* bottom:-82.17%  */
+        /* bottom: -157px;  */
+            /* border: 4px solid rgb(226, 49, 108);  */
+    
+    } 
+
 
 }
 
@@ -1328,6 +1372,13 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
      
     } 
 
+    .lets-kickstart-your{ 
+        font-size:2.6vw; 
+        /* font-size: 56px;  */
+        /* line-height:3.5vw;  */
+    
+    } 
+
     .button { 
         background-color: #641960; 
     }
@@ -1391,7 +1442,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
 
 @media (max-width: 1024px) {
-
+    /* 1024 */
     header {
         /* height: 60px; */
         padding: 0px 10%;
@@ -1418,6 +1469,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* width: auto; */
      }
      .lets-kickstart-your{ 
+        font-size:2.6vw; 
         /* font-size: 56px;  */
         line-height:3.5vw; 
     
@@ -1432,8 +1484,9 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .contactSocialLineFrame { 
         right: 0; 
-        top:41%; 
-        transform: translateX(-298%); 
+        /* top:41%;  */
+        /* transform: translateX(-298%);  */
+        transform: translateX(-10.4vw);
     }
 
 
@@ -1464,6 +1517,73 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
     .button { 
         background-color: #305564; 
 
+    }
+
+}
+
+@media (max-width: 748px) {
+    header {
+        padding: 0px 5%; 
+    }
+    .language-en-orizontal-de ul {
+        display: none;
+    }
+
+    .hero-content { 
+        padding: 10% 5% 16% 5%;
+        /* top right bottom left */
+
+    } 
+
+    .heroPicTextAll{     
+        gap: 2vw; 
+    } 
+
+    .crafting-digital-experiences h1{ 
+        /* font-size: 48px;  */
+        /* line-height: 62px;  */
+        font-size:4.5vw; 
+        line-height:4.5vw;
+    } 
+    .lets-kickstart-your {
+        width: 75%;
+        font-size:3.1vw; 
+        line-height:4.1vw;
+        
+    }
+    .button { 
+        background-color: #a1db1c; 
+
+    }
+   
+    .contactSocialLineFrame { 
+        right: 0; 
+        /* top:28%;  */
+        top:16%; 
+        transform: translateX(-3vw);
+
+        /* transform: translateX(-298%);  */
+        /* transform: translateX(-6vw); */
+    }
+
+}
+@media (max-width: 508px) {
+    .lets-kickstart-your {
+        width: 85%;
+        font-size:3.5vw; 
+        line-height:4.5vw;
+        
+    }
+    
+    .button { 
+        background-color: #db9f1c; 
+    }
+
+    .contactSocialLineFrame { 
+        right: 0; 
+        top:15%; 
+        /* transform: translateX(-298%);  */
+        transform: translateX(-3vw);
     }
 
 }
