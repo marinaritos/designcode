@@ -155,8 +155,9 @@ nav ul li a:hover {
     /* Limitează lățimea */ 
     max-width: 1600px; /* Limitează lățimea */ 
 
-    /* padding: 154px 156px 230px 156px; top right bottom left */
-    padding: 10% 10% 16% 10%;
+    padding: 154px 156px 230px 156px; 
+    /* top right bottom left */
+    /* padding: 10% 10% 16% 10%; */
     margin: 0 auto; /* Centrează conținutul */
 
     background-color: #e6e8e8; 
@@ -178,9 +179,10 @@ nav ul li a:hover {
     justify-content: space-evenly; /* de ce nu apare spatiu intre? */ 
     flex-wrap: wrap; 
  
-    width: 100%; 
-    gap: 3vw;
-    /* gap: 64px;  */
+    /* width: 100%;  */
+    width: 1128px;
+    /* gap: 3vw; */
+    gap: 64px; 
     text-align: center; 
     color: #424a4e; 
     box-sizing: border-box; /* Include border și padding în calculul lățimii, no ctoto nu vre */ 
@@ -267,7 +269,8 @@ nav ul li a:hover {
     flex-direction: column; 
     align-items: flex-start; 
     justify-content: center; 
-    gap: 2vw;; 
+    gap: 1.4vw;
+    /* gap: 2vw; */
     /* gap: 24px;  */
     text-align: left;
     width: 100%; 
@@ -288,7 +291,7 @@ nav ul li a:hover {
     color: #353b3e;
     margin: 0; /*adaugat la cplt*/
     text-align: left; 
-    border: 4px solid rgb(144, 104, 218); 
+    /* border: 4px solid rgb(144, 104, 218);  */
 
 } 
 
@@ -296,8 +299,8 @@ nav ul li a:hover {
 /* Subtitlu */
 /* .hero-content */
 .lets-kickstart-your{ 
-    /* width: 671px;  */
-    width: 85%;
+    width: 671px; 
+    /* width: 85%; */
     position: relative; 
     font-size: 40px; 
     /* font-size:2.5vw; 
@@ -319,8 +322,9 @@ nav ul li a:hover {
     background-color: #0073A2; 
     color: #EEEFF0; 
     font-size: 32px; 
-    font-weight: bold; 
-    line-height: 38px; 
+    font-weight: bold;
+    line-height: 42px; 
+    /* line-height: 38px;  */
     text-align: center;   
     cursor: pointer; 
     padding: 10px 57px;  
@@ -344,12 +348,15 @@ nav ul li a:hover {
     align-items: center; 
     gap: 12px; 
     right: 0; /* Aliniere la marginea dreaptă */
-    top: 26vw;
+    /* top: 26vw; */
     /* top: 48%;  */
-    /* top: 51%;  */
-    transform: translateX(-11.2vw);
-    /* transform: translateX(-772%);
-    transform: translateX(-552%);  */
+    /* top: 45.5%;  */
+    top: 51%; 
+    transform: translateX(-242px);
+    /* transform: translateX(-10.4vw); */
+    /* transform: translateX(-11.2vw); */
+    /* transform: translateX(-772%); */
+    /* transform: translateX(-552%);  */
     opacity: 0.6;
 
 
@@ -428,7 +435,7 @@ nav ul li a:hover {
 
     position: absolute; 
     right: 5px;
-    bottom:-142.17% 
+    bottom:-172.17% 
     /* bottom: -157px;  */
         /* border: 4px solid rgb(226, 49, 108);  */
 
@@ -1113,10 +1120,12 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
     .hero-content {    
         /* padding: 154px 3%;  */
         /* padding: 154px 132px;  */
+        padding: 10% 10% 16% 10%;
     }
 
     .heroPicTextAll{     
         gap: 54px; 
+        width: 100%;
     } 
 
     .heroPicTextLeft{  
@@ -1143,6 +1152,11 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         line-height: 36px;
     }
 
+    /* .TextButtonFrame{ 
+        gap: 2vw;
+
+    } */
+
     .crafting-digital-experiences h1{ 
         /* font-size: 48px;  */
         /* line-height: 62px;  */
@@ -1164,6 +1178,8 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
      .contactSocialLineFrame { 
         right: 0; 
+        /* top: 26vw; */
+        /* transform: translateX(-11.2vw); */
         /* top:48%;  */
         /* transform: translateX(-442%);  */
         transform: translateX(-10.4vw);     
@@ -1176,7 +1192,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .blueline { 
         right: 5px;
-        bottom:-92.17% 
+        bottom:-102.17% 
         /* bottom:-82.17%  */
         /* bottom: -157px;  */
             /* border: 4px solid rgb(226, 49, 108);  */
@@ -1554,7 +1570,33 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         background-color: #305564; 
 
     }
+
+
+    .social { 
+        gap: 1.2vw;
     
+    }
+    
+     .iconoirtelegram { 
+        width: 3.5vw; 
+        /* height: 32px;   */
+    }
+
+ 
+ /* .blueline-child { 
+        height: 20vh; 
+    
+    }  */
+
+    .blueline { 
+        right: 3px;
+        bottom:-112.17% 
+        /* bottom:-82.17%  */
+        /* bottom: -157px;  */
+            /* border: 4px solid rgb(226, 49, 108);  */
+    
+    } 
+
 
 }
 
@@ -1606,11 +1648,21 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* top:28%;  */
         /* top:16%;  */
         top: 10vw;
-        transform: translateX(-3vw);
+        transform: translateX(-6vw);
 
         /* transform: translateX(-298%);  */
         /* transform: translateX(-6vw); */
     }
+
+    
+.blueline { 
+        right: 0px;
+        bottom:-122.17% 
+        /* bottom:-82.17%  */
+        /* bottom: -157px;  */
+            /* border: 4px solid rgb(226, 49, 108);  */
+    
+    } 
 
 }
 @media (max-width: 508px) {
