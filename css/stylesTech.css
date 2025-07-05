@@ -36,6 +36,7 @@ header {
 
     width: 100%;
     max-width: 1128px;
+    /* max-width: 1188px; */
     min-width: 360px; 
     /* padding: 0px 156px;  */
     /* overflow: hidden;  */
@@ -151,9 +152,10 @@ nav ul li a:hover {
     align-items: center; 
  
     width: 100%; /* Responsiv */
-    /* max-width: 1440px;  */
+    max-width: 1460px; 
     /* Limitează lățimea */ 
-    max-width: 1600px; /* Limitează lățimea */ 
+    /* max-width: 1600px;  */
+    /* Limitează lățimea */ 
 
     padding: 154px 156px 230px 156px; 
     /* top right bottom left */
@@ -179,8 +181,8 @@ nav ul li a:hover {
     justify-content: space-evenly; /* de ce nu apare spatiu intre? */ 
     flex-wrap: wrap; 
  
-    /* width: 100%;  */
-    width: 1128px;
+    width: 100%; 
+    /* width: 1128px; social sters */
     /* gap: 3vw; */
     gap: 64px; 
     text-align: center; 
@@ -189,7 +191,7 @@ nav ul li a:hover {
  
     margin: 0 auto; /* Centrează conținutul */
 
-    border: 4px solid rgb(116, 234, 165); 
+    /* border: 4px solid rgb(116, 234, 165);  */
 } 
  
 /* Imagine și text pe stânga */
@@ -277,7 +279,7 @@ nav ul li a:hover {
     /* color: #353b3e;  */
     /* height: 100%;  */
 
-    border: 4px solid rgb(144, 104, 218); 
+    /* border: 4px solid rgb(144, 104, 218);  */
 } 
 
 /* Titlu principal */
@@ -309,7 +311,7 @@ nav ul li a:hover {
     color: #586368; 
     text-align: left; 
     /* display: inline-block;  */
-        border: 4px solid rgb(144, 104, 218); 
+        /* border: 4px solid rgb(144, 104, 218);  */
 
 } 
 
@@ -351,19 +353,22 @@ nav ul li a:hover {
     /* top: 26vw; */
     /* top: 48%;  */
     /* top: 45.5%;  */
-    top: 51%; 
-    transform: translateX(-242px);
+    
+    top: 48%;
+    /* top: 42%;  */
+    
+    /* transform: translateX(-242px); */
     /* transform: translateX(-10.4vw); */
     /* transform: translateX(-11.2vw); */
     /* transform: translateX(-772%); */
-    /* transform: translateX(-552%);  */
+    transform: translateX(-552%); 
     opacity: 0.6;
 
 
     /* right: 162px;  */
     /* bottom: 100px;  */
     /*bottom: 0;  Aliniere la marginea de jos */
-    border: 4px solid rgb(81, 226, 49); 
+    /* border: 4px solid rgb(81, 226, 49);  */
 
 } 
 .social { 
@@ -420,7 +425,12 @@ nav ul li a:hover {
         
 .blueline-child { 
     width: 2px; 
-    height: 34vh; 
+    /* height: 110px;  */
+    height: 20dvh; 
+    /*dvh - 1% din viewportul dinamic (se adaptează la UI)	Recomandat pentru layout-uri fluide */
+    /* height: 28vh;  */
+
+    /* height: 44vh;  */
     /* height: 27vh;  */
     background: linear-gradient(360deg, #586368 0%, rgba(0, 73, 103, 0.00) 100%); 
     /* background: linear-gradient(360deg, #28d3d3 0%, rgba(0, 73, 103, 0.00) 100%);  */
@@ -435,7 +445,11 @@ nav ul li a:hover {
 
     position: absolute; 
     right: 5px;
-    bottom:-172.17% 
+    /* bottom:-72.17%  */
+    bottom:-112.17%
+    /* bottom: -130px;  */
+
+    /* bottom:-172.17%  */
     /* bottom: -157px;  */
         /* border: 4px solid rgb(226, 49, 108);  */
 
@@ -1111,7 +1125,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
 /* Large (laptopuri mici) 1400*/
 
-@media (max-width: 1430px) {
+@media (max-width: 1400px) {
     header {
         /* height: 60px; */
         /* padding: 0px 10%; */
@@ -1125,7 +1139,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
 
     .heroPicTextAll{     
         gap: 54px; 
-        width: 100%;
+        /* width: 100%; */
     } 
 
     .heroPicTextLeft{  
@@ -1182,7 +1196,8 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* transform: translateX(-11.2vw); */
         /* top:48%;  */
         /* transform: translateX(-442%);  */
-        transform: translateX(-10.4vw);     
+        /* transform: translateX(-10.4vw);      */
+        transform: translateX(-10.4dvw); 
     }
 
     .blueline-child { 
