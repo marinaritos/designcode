@@ -828,6 +828,7 @@ h2{
     display: block; 
     width: auto; 
     width: 70%; 
+    height: 90vh; 
     /* max-width: 700px;  */
 } 
  
