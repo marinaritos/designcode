@@ -1799,7 +1799,7 @@ a { color: inherit; /* Moștenește culoarea textului părinte */
         /* height: 2px; */
         flex-wrap: wrap;
         gap: 6px; /* Control asupra spațiilor între elemente */
-        border: 4px solid rgb(218, 104, 199); 
+        /* border: 4px solid rgb(218, 104, 199);  */
 
 
     }
