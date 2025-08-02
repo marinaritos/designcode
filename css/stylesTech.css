@@ -824,9 +824,10 @@ h2{
   }
  
 .modal-content-long { 
-    margin: 5% auto; 
+    /* margin: 5% auto; */
+    margin: 2vh auto; 
     display: block; 
-    width: auto; 
+    /* width: auto;  */
     width: 70%; 
     height: 90vh; 
     /* max-width: 700px;  */
