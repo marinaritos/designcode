@@ -835,8 +835,16 @@ h2{
     /* max-width: 700px;  */
 
     overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+    /* overflow-y: auto; Activează scroll vertical doar dacă conținutul depășește înălțimea containerului. Dacă nu e nevoie de scroll, nu apare bara — e „inteligent”. */
+    -webkit-overflow-scrolling: touch; 
+   /* -webkit-overflow-scrolling: touch;  Este un proprietate specifică WebKit (folosit de Safari pe iOS). Activează scroll-ul cu inerție — adică acel efect „smooth” când glisezi cu degetul. Fără această proprietate, scroll-ul pe iOS poate fi sacadat sau neplăcut. */
 } 
+
+.modal-content-long img {
+  display: block;
+  max-width: 100%;
+  height: auto;               /* păstrează proporțiile naturale */
+}
  
 .modal-content-wide { 
     margin: 5% auto; 
